@@ -5,7 +5,10 @@
   "scripts": {
     "dev:web": "pnpm --filter client dev",
     "build:web": "pnpm --filter client build",
-    "lint:web": "pnpm --filter client lint"
+    "lint:web": "pnpm --filter client lint",
+    "dev:api": "pnpm --filter api dev",
+    "build:api": "pnpm --filter api build",
+    "typecheck:api": "pnpm --filter api typecheck"
   },
   "packageManager": "pnpm@10.26.2"
 }
