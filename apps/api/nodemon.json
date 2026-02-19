@@ -1,0 +1,11 @@
+{
+  "watch": ["src"],
+  "ext": "ts",
+  "exec": "tsx",
+  "script": "src/index.ts",
+  "ignore": ["*.json", "dist/"],
+  "delay": 500,
+  "env": {
+    "NODE_ENV": "development"
+  }
+}

@@ -3,9 +3,9 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "dev:web": "pnpm --filter client dev",
-    "build:web": "pnpm --filter client build",
-    "lint:web": "pnpm --filter client lint",
+    "dev:web": "pnpm --filter web dev",
+    "build:web": "pnpm --filter web build",
+    "lint:web": "pnpm --filter web lint",
     "dev:api": "pnpm --filter api dev",
     "build:api": "pnpm --filter api build",
     "typecheck:api": "pnpm --filter api typecheck"
