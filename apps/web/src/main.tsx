@@ -12,13 +12,15 @@ import { RootLayout } from "@/components/root-layout";
 import { PageContainer } from "./components/page-container";
 import { Button } from "@/components/ui/button";
 import { ErrorFallback } from "@/components/error-fallback";
+import { RouteProtector } from "@/components/route-protector";
+import { DashboardPage } from "@/components/dashboard-page";
 
 // eslint-disable-next-line react-refresh/only-export-components
 const NotFoundPage = () => {
   return (
     <PageContainer className="min-h-screen min-w-screen flex justify-center items-center gap-5 text-4xl">
       <>
-        404 | Page could not be found
+        Page could not be found
         <Button>
           <Link to="/">Go Home</Link>
         </Button>
@@ -33,7 +35,6 @@ createRoot(document.getElementById("root")!).render(
       FallbackComponent={ErrorFallback}
       onReset={() => (window.location.href = "/")}
       onError={(error, info) => {
-        // You can log the error to an error reporting service here
         console.error("Error caught by boundary:", error, info);
       }}
     >
@@ -50,6 +51,9 @@ createRoot(document.getElementById("root")!).render(
             >
               <Routes>
                 <Route path="/" element={<RootLayout />}>
+                  <Route element={<RouteProtector />}>
+                    <Route path="dashboard" element={<DashboardPage />} />
+                  </Route>
                   <Route path="*" element={<NotFoundPage />} />
                 </Route>
               </Routes>

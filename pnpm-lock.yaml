@@ -74,6 +74,9 @@ importers:
       axios:
         specifier: ^1.13.5
         version: 1.13.5
+      better-auth:
+        specifier: ^1.4.18
+        version: 1.4.18(@prisma/client@5.22.0)(better-sqlite3@12.6.2)(drizzle-kit@0.31.9)(drizzle-orm@0.45.1(@prisma/client@5.22.0)(@types/pg@8.16.0)(better-sqlite3@12.6.2)(kysely@0.28.11)(pg@8.18.0))(pg@8.18.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       class-variance-authority:
         specifier: ^0.7.1
         version: 0.7.1
