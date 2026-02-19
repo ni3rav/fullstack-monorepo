@@ -1,0 +1,11 @@
+{
+  "name": "fullstack-monorepo",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev:web": "pnpm --filter client dev",
+    "build:web": "pnpm --filter client build",
+    "lint:web": "pnpm --filter client lint"
+  },
+  "packageManager": "pnpm@10.26.2"
+}
