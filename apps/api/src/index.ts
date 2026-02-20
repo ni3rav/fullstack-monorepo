@@ -4,6 +4,7 @@ import { toNodeHandler } from "better-auth/node";
 
 import { auth } from "@/lib/auth";
 import { env } from "@/lib/env";
+import demoRouter from "./routes/demo";
 
 const app = express();
 
@@ -16,6 +17,7 @@ app.use(
 
 app.all("/api/auth/{*any}", toNodeHandler(auth));
 app.use(express.json());
+app.use("/api", demoRouter);
 
 app.get("/health", (_req, res) => {
   res.status(200).json({ status: "ok" });
