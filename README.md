@@ -120,7 +120,7 @@ pnpm typecheck:api  # Type checking
 ### Frontend
 
 ```bash
-pnpm dev:web        # Dev server
+pnpm dev:web        # Dev server (requires bun)
 pnpm build:web      # Production build
 pnpm lint:web       # ESLint
 ```

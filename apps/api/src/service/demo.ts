@@ -1,3 +1,5 @@
+import logger from "@/lib/logger";
+
 // Service for demo endpoints
 
 export function getDemoData() {
@@ -9,7 +11,7 @@ export function getDemoData() {
 
 export function demoMutation(input: string) {
   // Simulate mutation logic
-  console.log(input)
+  logger.info({ input }, "Demo mutation called");
   return {
     result: `Received: ${input}`,
   };
