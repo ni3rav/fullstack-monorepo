@@ -12,6 +12,7 @@
   "dependencies": {
     "@base-ui/react": "^1.2.0",
     "@fontsource-variable/outfit": "^5.2.8",
+    "@hookform/resolvers": "^5.2.2",
     "@tailwindcss/vite": "^4.1.17",
     "@tanstack/react-query": "^5.90.21",
     "axios": "^1.13.5",
@@ -23,6 +24,7 @@
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-error-boundary": "^6.1.1",
+    "react-hook-form": "^7.71.2",
     "react-router-dom": "^7.13.0",
     "shadcn": "^3.8.5",
     "sonner": "^2.0.7",
